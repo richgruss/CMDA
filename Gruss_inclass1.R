@@ -1,7 +1,4 @@
-setwd('/Users/rgruss/git/CMDA/')
 
-#import
-carsdata<-read.table('cars1.csv', sep=',', header=T)
 
 #size
 dim(carsdata)
