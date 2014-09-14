@@ -75,8 +75,29 @@ summary(dtrain$COW)
 #gives the counts of each work category
 
 
+"
+These are the results of the 2012 Gender and Generations Survey 
+conducted over the phone in 2012 by the Pew Research Center.  
+There 2511 respondents, and 319 variable values were collected.
+The survey was designed to collect attitudes about generation 
+differences in attitudes and priorities.
+In addition to basic data about gender, income, age, 
+religion, ethnicity, etc, 
+respondents were 
+asked questions about their happiness, whether they feel rushed, 
 
+Some of the more interesting questions:
 
+what do you think is the ideal situation for WOMEN with young children?
+Overall, how satisfied are you with your job?
+When it comes to taking care of your (IF P.1=1: child, IF P.1=2: children), do you do more than your (IF M.1=1: spouse, IF M.1=2: partner, IF M.1 GE 3 & P.1=1: child’s other parent, IF M.1 GE 3 & P.1=2: children’s other parent), does your (IF M.1=1: spouse, IF M.1=2: partner, IF M.1 GE 3 & P.1=1: child’s other parent, IF M.1 GE 3 & P.1=2: children’s other parent) do more than you, or do you share this about equally? 
+When it comes to household chores and responsibilities, do you do more than your (IF M.1=1: spouse, IF M.1=2: partner), does your (IF M.1=1: spouse/IF M.1=2: partner) do more than you, or do you share this about equally? 
+"
+pewSocial <- read.csv(
+  'data/nov12-gender-and-generations_cleaned.csv',
+  sep=',',
+  header=T
+)
 
 
 
