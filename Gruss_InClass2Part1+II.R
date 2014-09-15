@@ -113,6 +113,41 @@ summary(d$`Other.debtors/guarantors`) #need to escape because of the /
 #907 loan applications had not co-applicant or guarantor,
 #only 41 had co-applicants an 52 had guarantors
 
+#The health insurance customer data
+load('exampleData.rData')
+custdata2 <- subset(custdata,
+                    (custdata$age > 0 & custdata$age < 100
+                     & custdata$income > 0))
 
 
+library(hexbin)
+plot(hexbin(custdata2$age, custdata2$Income),  colramp= heat.ob)
 
+summary(custdata2$age)
+summary(custdata2$income)
+#This is very like a scatter plot.  The extra visual cue is the color,
+#so we have more than just density to determine the quanity at any 
+#age-income combination.
+
+summary(custdata2$num.vehicles)
+plot(hexbin(custdata2$Income, custdata2$num.vehicles),  colramp= heat.ob)
+#is there a correlation between num vehicles and income?
+#we're missing a lot of car data (31 NA's)
+cor(custdata2$Income, custdata2$num.vehicles, use="complete")
+
+ggplot(custdata2, aes(x=income,y=num.vehicles)) +
+  geom_point() +
+  ylim(0,6) +
+  theme_bw() +
+  ggtitle("Scatterplot of Income vs Num Vehicles")
+
+#This plot visualizes the fact that there is no correlation between 
+#income and number of vehicles.  
+
+ggplot(custdata2) +
+  geom_bar(aes(x=income.lt.30K, fill=recent.move))+
+  theme_bw()+
+  ggtitle("Recent moves by income < 30K")
+
+#I think the stacked bar works best for this.  This shows that there is 
+#no relationship between recent moves and income < 30k.
