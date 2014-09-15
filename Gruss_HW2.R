@@ -74,7 +74,7 @@ dtest = subset(psub, ORIGRANDGROUP < 500)
 summary(dtrain$COW)
 #gives the counts of each work category
 
-#Pew Social Trends data (see manual)
+#Pew Social Trends data (see manual here: https://github.com/richgruss/CMDA/blob/master/data/PST%20DGM%20Survey%20Manual.docx)
 pewSocial <- read.csv(
   'data/pew-diet-movies.csv',
   sep=',',
@@ -85,6 +85,7 @@ dim(pewSocial)
 names(pewSocial)
 summary(pewSocial)
 
+summary(pewSocial$AGE.What.is.your.age.)
               
               
               
