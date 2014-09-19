@@ -1,0 +1,14 @@
+reasons to subsample:
+
+-visualizations are too crowded with too much data (scatter plots)
+-easier to see patterns on an small scale
+-easier to run code against 100 lines vs. 1 million
+-train and test splits
+
+case for normalizing: to determine whether you qualify for food stamps, we see your income relative to poverty line.
+
+z-score: (val-mean)/std.dev (center on mean, val is # of st.dev away from mean)
+
+
+
+
