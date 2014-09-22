@@ -11,7 +11,7 @@ sink('pewSocialNames.txt')
 names(pewSocial)
 sink()
 
-"1.  There are over 400 variables, corresponding to both basic biodemographic data and answers to survey questions.
+"There are over 400 variables, corresponding to both basic biodemographic data and answers to survey questions.
 Each question has a code for 'Don't know/refused', so for aggregate operations that involve rows with missing data, it is safe 
 to drop those records. We're really only interested in the biodemo questions, fitness, and movies question.  
 We've narrowed it down to 108 variables.  This creates a smaller dataframe with only the columns listed in 
@@ -54,6 +54,20 @@ ggplot(pewSocial) + geom_bar(aes(x=Q.1.How.would.you.rate.the.overall.quality.of
                             position="fill") +
   theme_bw()+
   ggtitle("Quality of life per region")
+
+colnames(pewsubset)[colnames(pewsubset)=="Q.50b.How.much.do.you.think.exercising.for.physical.fitness.affects.a.person.s.attractiveness...a.lot..a.little..or.not._labels"] <- "weight_aff_attr"
+
+ggplot(pewsubset) + geom_bar(aes(x=weight_aff_attr,
+                                 fill=Census.region_labels),
+                             position="fill") +
+  theme_bw()+
+  ggtitle("How much weight affects attractiveness per region")
+
+
+#as we find which variables we want to concentrate on, we'll need to be sure 
+#to graph according to the PROPORTION of respondents of a certain category 
+#rather than the raw amount.  
+
 
 
 

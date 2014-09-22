@@ -107,3 +107,4 @@ RELIG.What.is.your.religious.preference...Protestant..Roman.Catholic..Jewish..Mu
 BORN.Would.you.describe.yourself.as.a..born.again..or.evangelical.Christian..or.not._labels                                    
 ATTEND.Aside.from.weddings.and.funerals..how.often.do.you.attend.religious.services....more.than.once.a.week..once.a.wee_labels
 INCOME.Last.year..that.is.in.2005..what.was.your.total.family.income.from.all.sources..before.taxes...Just.stop.me.when._labels
+Census.region_labels
