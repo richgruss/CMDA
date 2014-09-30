@@ -67,7 +67,7 @@ ggplot(pewsubset) + geom_bar(aes(x=weight_aff_attr,
 #as we find which variables we want to concentrate on, we'll need to be sure 
 #to graph according to the PROPORTION of respondents of a certain category 
 #rather than the raw amount.  
-
+save.image(file="homework/TransformedData.RData")
 
 
 
