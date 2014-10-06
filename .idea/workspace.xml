@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39eeebd2-e939-48b2-a058-a4b358fe8070" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/in_class/RGruss_Inclass5-2.ipynb" afterPath="$PROJECT_DIR$/in_class/RGruss_Inclass5-2.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_analytics_java.iml" afterPath="$PROJECT_DIR$/data_analytics_java.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-    </list>
+    <list default="true" id="39eeebd2-e939-48b2-a058-a4b358fe8070" name="Default" comment="" />
     <ignored path="data_analytics_java.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,8 +26,8 @@
       <file leaf-file-name="RGruss_Inclass-5.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/in_class/RGruss_Inclass-5.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="9.143258" vertical-offset="0" max-vertical-offset="6645">
-              <caret line="434" column="0" selection-start-line="434" selection-start-column="0" selection-end-line="434" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.4002809" vertical-offset="0" max-vertical-offset="6645">
+              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -135,6 +131,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="tests" factoryName="py.test">
@@ -271,6 +268,9 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="39eeebd2-e939-48b2-a058-a4b358fe8070" name="Default" comment="" />
@@ -336,8 +336,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/in_class/RGruss_Inclass-5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="9.143258" vertical-offset="0" max-vertical-offset="6645">
-          <caret line="434" column="0" selection-start-line="434" selection-start-column="0" selection-end-line="434" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4002809" vertical-offset="0" max-vertical-offset="6645">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
           <folding />
         </state>
       </provider>

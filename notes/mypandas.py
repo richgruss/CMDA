@@ -11,8 +11,6 @@ dict1 = {'Fruits':2, 'Veggies':10}
 
 series4 = pd.Series(dict1)
 
-
-
 dict_meal = {
     'fruits':['apple','pear','banana'],
     'veg':['celery','tomato','cucumber'],
