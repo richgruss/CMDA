@@ -1,5 +1,11 @@
 import pandas as pd
+import numpy as np
 
+sampler = np.random.permutation(31)
+print sampler
+
+
+"""
 #pandas provides dataframe (like R)
 
 series1 = pd.Series([100,200,300])
@@ -62,5 +68,7 @@ print freq
 
 # 2 indices unstacks to table
 # 3 indices unstacks to cube
+
+"""
 
 
