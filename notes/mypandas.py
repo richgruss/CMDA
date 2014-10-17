@@ -81,5 +81,7 @@ cat_ser = pd.Series(['a','b','c','a','a','b'])
 #print np.arange(5,10,.5) half-open interval
 
 
+print np.random.permutation(20)
+
 
 
