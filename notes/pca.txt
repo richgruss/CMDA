@@ -1,0 +1,20 @@
+Principal Components Analysis
+
+unsupervised learning
+
+great for reducing dimensionality of huge data
+
+reducing 60 "suitcases" to 1 or 2 or 3
+
+create new variables--"principle components" with decreasing information in each
+
+commonly distributed with packages
+
+each new variable is going to be some linear combinations of some of the original variables
+
+optical recognition of numbers 0-9
+64 attributes (pixels?)
+
+
+
+
