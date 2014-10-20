@@ -1,4 +1,4 @@
-1) Create a new ipython notebook .
+qawer\[piaf;’.bv c1) Create a new ipython notebook .
 2) Discuss with your team and decide if you would like to use the same data set for your final
 project. You can stay with it or you can find a new one. Data can come from a csv file, a text file,
 or a JSON object.

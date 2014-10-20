@@ -7,7 +7,6 @@ from sklearn import datasets
 from sklearn.cross_validation import train_test_split
 from sklearn import preprocessing
 
-
 iris = datasets.load_iris()
 X_iris, y_iris = iris.data, iris.target
 
