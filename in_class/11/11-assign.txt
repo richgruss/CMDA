@@ -1,0 +1,52 @@
+---Lect 33------
+
+Use mtcars R dataset provided by the: 
+data(mtcars) command; 
+• Display the first 6 observations (head(mtcars)) and the 
+variable names (names(mtcars)); 
+• Describe each variable in the dataset with a few words 
+(data manual); you can find that information by using the 
+command ?mtcars; 
+• Classify cars into “automatic” vs “manual” transmission 
+using a CART decision tree and the other variables as 
+features; interpret the tree. 
+• Plot the tree; what do you see? 
+• Calculate the AUC (note: we are using the same data for 
+training and calculating AUC). 
+• Submit your R file IN11_1.R by next Monday. 
+
+
+
+
+--Lect 34--
+Use mtcars R dataset provided by the: 
+data(mtcars) command; 
+• Display the first 6 observations (head(mtcars)) and the 
+variable names (names(mtcars)); 
+• Describe each variable in the dataset with a few words 
+(data manual); you can find that information by using 
+the command ?mtcars; 
+• Train a knn, decision tree and logistic model on this 
+data. Get predictions on the same training data. 
+• Calculate and compare the AUC and system time for 
+each algorithm. Which one does better? Do you run 
+into any problems? 
+• Submit your R file IN11_2.R by next Monday.
+
+
+
+--Lect 35--
+Use mtcars R dataset provided by the: 
+data(mtcars) command; 
+• Display the first 6 observations (head(mtcars)) and the variable 
+names (names(mtcars)); 
+• Describe each variable in the dataset with a few words (data 
+manual); you can find that information by using the command 
+?mtcars; 
+• Train a naïve Bayes algorithm on this data. Get predictions on the 
+same training data. 
+• Calculate and the AUC and system time. Compare to the algos from 
+Inclass2. Which one does better? Do you run into any problems? 
+• Submit one R file with the four algo (tree, logistic, knn, naïve bayes, 
+system times and AUC on train data to Dropbox by Monday, 
+November 17, 1pm . 

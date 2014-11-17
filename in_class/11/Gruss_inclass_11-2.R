@@ -26,10 +26,11 @@ install.packages('class')
 library(class)
 response <- mtcars$am > 0
 
-system.time(knnDecision <- knn(mtcars,mtcars,response,k=200,prob=T))
+system.time(knnDecision <- knn(mtcars,mtcars,response,k=3,prob=T))
 ?knn #to learn more about the knn implementation
 
 head(knnDecision)
+knnDecision
 
 knnPred <- ifelse(knnDecision==TRUE,
                   attributes(knnDecision)$prob,
@@ -42,39 +43,25 @@ eval <- prediction(knnPred, response) #from ROCR package
 auc_calc <- performance(eval,'auc')
 auc_calc@y.values #special object; this is how we extract the exact AUC part
 
+#AUC=.9555
+
 #################Logistic algo
 
 #compare to logistic regression AUC and system time
-f <- paste('response ~ ',paste(mtcars[,],collapse=' + '),sep='')
+
+#let's try using all the variables
+f <- paste('am ~ ',paste(names(mtcars),collapse=' + '),sep='')
+f
+
 system.time(gmodel <- glm(as.formula(f),
                           data=mtcars,
                           family=binomial(link='logit'))) #get system time and train the model
+
 log_predict <- predict(gmodel, 
                        newdata=mtcars, 
                        type = "response") #get p predictions
 
 #get AUC for logistic model
-
-eval <- prediction(log_predict, response) #from ROCR package
+eval <- prediction(log_predict, response)
 auc_calc <- performance(eval,'auc')
-auc_calc@y.values #special object; this is how we extract the exact AUC part
-
-###########CART algo
-#train CART decision tree, get AUC and system time
-library(rpart)
-f <- paste('response ~ ',paste(selVars,collapse=' + '),sep='')
-system.time(tmodel <- rpart(f,data=dTrain,
-                            control=rpart.control(cp=0.001,minsplit=1000,
-                                                  minbucket=1000,maxdepth=5)))
-
-dTrain$pred <- predict(tmodel, newdata = dTrain)
-dTrain$response <- dTrain$churn > 0
-
-#calculate AUC for CART decision tree
-eval <- prediction(dTrain$pred, dTrain$response) 
-auc_calc <- performance(eval,'auc')
-auc_calc@y.values
-
-
-
-
+auc_calc@y.values 

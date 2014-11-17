@@ -2,8 +2,8 @@
 setwd('/Users/rgruss/git/CMDA/lectures/33')
 load('KDD2009.Rdata')
 
-
 library(rpart)
+?rpart
 
 head(dTrain)
 names(dTrain)#training set
