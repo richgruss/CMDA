@@ -1,0 +1,12 @@
+Add a column for just hour based on date (split date and hour) [S]
+
+Making a day data frame from hours [S]
+Add bike counts/casual/registered together to get total bikes
+Add a daily mean of bike counts field
+Average temp/humid/winds peed/weather to get daily amounts (also store standard deviation)
+(keep season/holiday/working day the same )
+
+Make new data frame with filled in missing hourly rows using daily means of all the fields (that'll be robust_hourly) [R]
+Pull out a random 10% of the robust_hourly as a test set [R]
+Make 100 bins out of robust_hourly (classifier labels are bin numbers [R]
+Make machine learning algorithm to guess at a certain day's bike numbers given an hour[R]
