@@ -1,0 +1,520 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style>
+#header {
+    border: 1px solid #bbb;
+    height: 70px;
+    padding: 10px;
+    background-color: #647F91;
+    border: 2px solid;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+#header h1 {
+    color: #FFFAFA;
+}
+
+h3 {
+    color: #6D0101;
+     padding-top: 3px;
+     padding-bottom: 3px;
+     margin: 0px;
+}
+
+#logo {
+    float: left;
+    margin-right: 20px;
+    vertical-align:middle;
+     -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    border-radius: 8px;
+    width: 230px;
+    height: 68px;
+    overflow: hidden;
+}
+
+body {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 20px;
+    color: #666;
+}
+
+#wrapper {
+
+}
+
+ul li span {
+    display: block;
+}
+
+#content {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+#content-left {
+    width: 180px;
+    padding: 10px;
+    border: 1px solid #bbb;
+    float: left;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+#content-main {
+    margin-left: 10px;
+    width: 1200px;
+    padding: 10px;
+    border: 1px solid #bbb;
+    float: left;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+#content-right {
+    margin-left: 10px;
+    width: 134px;
+}
+
+#footer {
+    float: left;
+    clear: both;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 900px;
+}
+
+.problem {
+    padding: 10px;
+    border: 1px solid #bbb;
+    clear: both;
+}
+
+#bottom {
+    clear: both;
+    text-align: right;
+}
+
+a {
+    color: #6D0101;
+    text-decoration: none;
+    border-bottom: 1px dotted #6D0101;
+}
+
+a:hover {
+    border-bottom: 1px solid #6D0101;
+}
+
+#passes_table {
+    width: 100%;
+}
+
+.pretty-table {
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+    border: 1px solid #333;
+    font-size: 0.9em;
+    color: #000;
+}
+
+.pretty-table th, .pretty-table td {
+	border: 1px dotted #666;
+	padding: 0.5em;
+	text-align: left;
+	color: #red;
+}
+
+.pretty-table th {
+    color: #000;
+    background-color: #8fadcc;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    border-bottom: 2px solid #333;
+    border-right: 2px solid #333;
+}
+
+.pretty-table tr.alt th, .pretty-table tr.alt td {
+    color: #2a4763;
+}
+
+tr.borderRow td {
+    background-color: #FFEBCD;
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: #6D0101;
+}
+
+tr.borderRow td.left {
+    border-width: 2px 0 2px 2px;
+}
+
+tr.borderRow td.right {
+    border-width: 2px 2px 2px 0;
+}
+
+tr.instructorRow td {
+    background-color: #FFF8C6;
+}
+
+tr.empoOnlyRow td {
+    background-color: #E4F6F8;
+}
+
+tr.additionalScoreRow td {
+    background-color: #F8EDC9;
+}
+
+.scores-table {
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+    border: 1px solid #333;
+    font-size: 0.9em;
+    color: #000;
+}
+
+.scores-table th, .scores-table td {
+    border: 1px dotted #666;
+    padding: 0.5em;
+    text-align: left;
+    color: #000;
+}
+
+.scores-table th {
+    color: #000;
+    background-color: #eeeeee;
+    font-size: 1em;
+    border-bottom: 2px solid #333;
+    border-right: 2px solid #333;
+}
+
+.scores-table .quiz {
+    background-color: #FF99CC;
+}
+
+.scores-table .exam {
+    background-color: #CCFFCC;
+}
+
+.scores-table .final {
+    background-color: #99CCFF;
+}
+
+.scores-table tr.alt th, .scores-table tr.alt td {
+    color: #2a4763;
+}
+
+
+.plainList {
+    padding: 4px;
+    margin: 10px;
+    list-style-type: none;
+}
+
+.plainList li {
+    padding-top: 6px;
+}
+
+#navigation {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    line-height: 180%
+}
+
+#navigation h3 {
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 1.6px;
+    padding-top:0px;
+    padding-bottom: 0px;
+}
+#navigation .head {
+    width:100%;
+    background-color: #647F91;
+}
+#navigation div {
+    margin-left: -5px;
+    padding-left: 5px;
+    margin-top: 5px;
+    padding-top:0px;
+    padding-bottom: 0px;
+}
+
+#navigation ul {
+
+    list-style-type: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+
+#navigation li {
+    margin-left: 6px;
+}
+
+ul.noindent {
+
+}
+
+#itemPanel {
+    margin: 20px 0px 0px 20px
+}
+
+.itemMaterial {
+    margin: 25px 0px;
+}
+
+.itemChoice {
+    padding: 10px 20px 20px 20px
+}
+
+.itemNote {
+    margin: 25px 0px;
+}
+
+.itemSelector {
+    margin: 7px 0px;
+}
+
+#noteDiv {
+    background: #DDDDDD;
+    width: 700px;
+    margin: 5px;
+}
+
+form ul {
+    list-style-type: none;
+}
+
+form ul li label {
+    width: 200px;
+}
+
+form ul li {
+    padding: 4px 0px 4px 0px;
+}
+
+label {
+    float: left;
+    width: 200px;
+    margin-right: 8px;
+    text-align: right;
+
+}
+
+.user-feedback-error {
+    background: #ffeded;
+    border: 1px solid #ff9999;
+
+    padding: 7px 10px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 0 9px 0;
+}
+
+ul.spacedList li {
+    margin-top: 2em;
+}
+
+.feedbackPanelERROR {
+	color: #cc0000;
+}
+
+h2.errorHead {
+    font-size: 16px;
+    font-weight: bold;
+    color: #cc0000;
+}
+
+.error {
+    background: #ffeded;
+    border: 1px solid #ff9999;
+    color: #cc0000;
+    padding: 7px 10px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 0 9px 0;
+    width: 600px;
+}
+.note {
+    color: #cc0000;
+}
+.red {
+    color: #cc0000;
+}
+.user-feedback-error ul {
+    list-style-type: none;
+    background: url(/assets/all/images/feedback-error.png) no-repeat scroll left top transparent;
+    padding: 4px 0 4px 15px;
+    margin: 0;
+}
+.big {
+	font-size: 40px;
+	color:#36C;
+}
+
+.user-feedback-error li {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 6px 0 7px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #cc0000;
+}
+
+.user-feedback-error p {
+    margin: 0;
+    padding: 0 0 5px 10px;
+}
+
+.user-feedback-success {
+    background: #ecffec;
+    border: 1px solid #66cc66;
+
+    padding: 7px 10px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 0 9px 0;
+}
+
+.user-feedback-success ul {
+    list-style-type: none;
+    background: url(/assets/all/images/feedback-success.png) no-repeat scroll left top transparent;
+    padding: 4px 0 4px 15px;
+    margin: 0;
+}
+
+.user-feedback-success li {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 6px 0 7px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #009900;
+}
+
+.user-feedback-success p {
+    margin: 0;
+    padding: 0 0 5px 10px;
+}
+
+.btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+ 
+}
+
+.btn2 {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+ 
+}
+.btn1 {  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+</style>
+
+</head>
+
+<body>
+<h2>Bike Demand Prediction Tool</h2>
+<p>
+<input type="submit" class="btn2"  value="Estimate Demand From Weather and Calendar Service" />
+</p>
+<form id="form1" name="form1" method="post" action="">
+  <table width="800" border="0" cellpadding="4">
+    <tr>
+      <td><table width="380" height="408" border="0" align="center" cellpadding="8" class="pretty-table">
+        <tr>
+          <td width="108" align="right"> Work Day</td>
+          <td width="170" align="left"><input type="radio" name="radio" id="radio" value="radio" checked="checked" />
+            Yes
+            <input type="radio" name="radio2" id="radio2" value="radio2" />
+            No</td>
+        </tr>
+        <tr>
+          <td align="right">Holiday</td>
+          <td align="left"><input type="radio" name="radio" id="radio3" value="radio" checked="checked" />
+            Yes
+            <input type="radio" name="radio2" id="radio4" value="radio2" />
+            No</td>
+        </tr>
+        <tr>
+          <td align="right">Weather</td>
+          <td align="left"><select name="select" id="select">
+            <option>Light Rain or Snow </option>
+          </select></td>
+        </tr>
+        <tr>
+          <td align="right">Temperature</td>
+          <td align="left"><input name="textfield" type="text" id="textfield" value="23" size="10" /></td>
+        </tr>
+        <tr>
+          <td align="right">Humidity (%)</td>
+          <td align="left"><input name="textfield2" type="text" id="textfield2" value="68" size="10" /></td>
+        </tr>
+        <tr>
+          <td align="right">Windspeed</td>
+          <td align="left"><input name="textfield3" type="text" id="textfield3" value="12" size="10" /></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="right"><input class="btn1" type="submit" name="button" id="button" value="Estimate Demand" /></td>
+        </tr>
+        
+      </table></td>
+      <td valign="top" style="border: 1px black"><span class="big">Estimate: 250</span></td>
+    </tr>
+  </table>
+  <p>&nbsp;	</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</form>
+<p>&nbsp;</p>
+</body>
+</html>
